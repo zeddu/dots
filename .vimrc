@@ -5,6 +5,7 @@
 "=== basic configuration
 syntax on
 set number
+set ai
 set mouse-=a
 set backspace=indent,eol,start  " allow backspacing over everything.
 "set syntax=whitespace "another way to highlight tabs and spaces
