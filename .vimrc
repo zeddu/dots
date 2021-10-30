@@ -10,6 +10,8 @@ set mouse-=a
 set backspace=indent,eol,start  " allow backspacing over everything.
 "set syntax=whitespace "another way to highlight tabs and spaces
 
+nnoremap <C-l> :nohl<CR><C-L> "in addition to redraw (ctrl+l), also clear search highlight
+
 if exists('$TMUX')
     autocmd VimEnter,BufWrite * call system("tmux rename-window ' " . expand("%:t") . " '")
 endif
