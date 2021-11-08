@@ -2,8 +2,11 @@
 
 vim, tmux, bash, lf, lsd, imwheel, fonts
 
+## colorscheme = minty gruvbox
 ![Image of config](https://raw.githubusercontent.com/zeddu/dots/main/vimtmux2.png)
 
-
-## colorscheme = xterm
+## colorscheme = ska-xterm
 ![Image of config](https://raw.githubusercontent.com/zeddu/dots/main/vimtmux.png)
+
+## colorscheme = monokai-dark
+![Image of config](https://raw.githubusercontent.com/zeddu/dots/main/vimtmux3.png)
