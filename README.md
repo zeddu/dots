@@ -1,6 +1,6 @@
 # dots
 
-vim, tmux, bash, lf, lsd, imwheel, fonts
+vim, tmux, bash, xfce4-terminal, tilda, lf, lsd, imwheel, fonts
 
 ## colorscheme = minty gruvbox
 ![Image of config](https://raw.githubusercontent.com/zeddu/dots/main/vimtmux2.png)
