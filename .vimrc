@@ -2,13 +2,18 @@
 "###     SKARRO     ###
 "######################
 
-"=== basic configuration
+"=== basic configuration ===
 syntax on
 set number
 set ai
+set ruler
+set hlsearch
 set mouse-=a
+
+au BufNewFile,BufReadPost *.md set filetype=markdown
+let g:markdown_fenced_languages = ['c', 'css', 'sass', 'xml', 'html', 'bash']
+
 set backspace=indent,eol,start  " allow backspacing over everything.
-"set syntax=whitespace "another way to highlight tabs and spaces
 
 nnoremap <C-l> :nohl<CR><C-L> "in addition to redraw (ctrl+l), also clear search highlight
 
@@ -17,39 +22,31 @@ if exists('$TMUX')
 endif
 
 :command! -bar -bang Q quit<bang> " allows quitting vim with :Q (capital q)
-":command Q q
+":command Q q "seems to be an alternative
 
-"=== tab settings
-"set tabstop=4
+
+
+"=== tab settings === 
+set tabstop=4
+set shiftwidth=4
 "set expandtab
 "set softtabstop=4
 
-
 set listchars=tab:→\ ,space:·
-
-"set listchars=eol:¬
 "set listchars=tab:→\ ,space:·,eol:$
 set list
 
-"set listchars=tab:▸ 
-"set listchars+=space:.
 
 
+"=== colors ===
+colorscheme default
+hi MatchParen cterm=none ctermbg=green ctermfg=red
+highlight Comment ctermfg=green
+highlight Search ctermbg=white ctermfg=red
+highlight SpecialKey ctermfg=darkgray
+highlight EndOfBuffer ctermfg=black ctermbg=black
+"highlight NonText ctermfg=red
 
-"=== colors
 "set cursorline
 "highlight CursorLine cterm=NONE ctermbg=darkgray  ctermfg=white 
-
-"set colorcolumn=81
-"highlight ColorColumn ctermbg=red
-
-colorscheme default
-highlight Comment ctermfg=green
-
-"highlight NonText ctermfg=gold
-highlight SpecialKey ctermfg=darkgray
-
-highlight EndOfBuffer ctermfg=black ctermbg=black
-
-
 
